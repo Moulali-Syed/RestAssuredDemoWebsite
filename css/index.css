@@ -36,3 +36,10 @@
 
   line-height: 1.7rem;
 }
+
+img {
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+  width: 70%;
+}

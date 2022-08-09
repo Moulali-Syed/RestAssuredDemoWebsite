@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testing API using Postman</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../images/postman-logo.png"
+      style="width: 16px; height: 16px"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <h1 id="main">An overview of testing an API in POSTMAN</h1>
+    <p class="sub">Step1: Create a collection in POSTMAN application</p>
+    <p class="content">
+      Considering an API in which we add a place , on successfully addittion we
+      get place_id , using it for all the http methods
+    </p>
+    <p class="content">
+      Click on collections icon and then on <bold>+</bold> symbol and provide a
+      name to collection
+    </p>
+    <img src="../images/create-collection.png" alt="create-collection" />
+
+    <p class="content">Right Click on the collection , click on Add request</p>
+    <img src="../images/add-request.png" alt="add-request" />
+    <p class="content-sub">
+      Provide a name to the Request , By default request selected will be GET ,
+      select the appropriate
+    </p>
+
+    <p class="sub">POST Request</p>
+    <p class="content">
+      Lets see POST method, for POST we need to send the body
+    </p>
+    <p class="content-sub">Provide the URI</p>
+    <img src="../images/post-1.png" alt="post-slide1" />
+    <p class="content-sub">
+      Go to the body tab , select raw , select JSON as content Type and then
+      provide the payload
+    </p>
+    <img src="../images/post-2.png" alt="post-2" />
+
+    <p class="content-sub">
+      Click on the Send button , we will get response if all the request
+      parameters were valid .status code 200 will be seen
+    </p>
+    <img src="../images/post-3.png" alt="post-3" />
+    <div>
+      <hr />
+    </div>
+
+    <p class="content">GET Request</p>
+    <p class="content-sub">
+      Add one more request and select the GET method and provide the BASE URI
+    </p>
+    <p class="content-sub">
+      In GET whatever we have to send must be sent as the query params , provide
+      it place_id we created using the POST request inside the Query params
+    </p>
+  </body>
+</html>
