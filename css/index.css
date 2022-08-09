@@ -43,3 +43,29 @@ img {
   margin: 2rem auto;
   width: 70%;
 }
+#img {
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+  width: 40%;
+}
+
+.hyperLinks {
+  color: red;
+  background-color: rgba(255, 255, 255, 0.862);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.hyperLinks:hover {
+  color: blue;
+  font-weight: bold;
+}
+
+#home {
+  float: right;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+#home:hover {
+  color: red;
+}

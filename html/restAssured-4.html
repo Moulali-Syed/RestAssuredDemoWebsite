@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../images/rest-assured-logo.png"
+      style="width: 16px; height: 16px"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <h1 id="main">Some more Basics</h1>
+    <p class="content">
+      Create Session Filter Authentication in Rest Assured Automation
+    </p>
+    <p class="content-sub">
+      For Login Scenario instead of using JsonPath class and extracting the
+      required key value we have SessionFilter class , when ever we know that a
+      response returns a session which will be used in subsequent requests , u
+      simply create object of SessionFilter class and pass that object using the
+      filter(sessionObject)
+    </p>
+    <img src="../images/sessionFilter.png" alt="SessionFilter" />
+
+    <p class="content">Passing path parameter</p>
+    <p class="content-sub">
+      To send the path parameters , use the pathParam() method after the given
+      and use it using {}
+    </p>
+    <img src="../images/pathParam.png" alt="pathParams" />
+    <p class="content">Adding file</p>
+    <p class="content-sub">
+      To send any attachment in rest assured we use multipart method
+    </p>
+    <img src="../images/multipart.png" alt="multipart" />
+    <p class="content">Validate HTTPS certification</p>
+    <p class="content-sub">Use relaxedHTTPSValidation() method after given</p>
+    <img src="../images/HTTPSValidation.png" alt="HTTPSCerts" />
+    <p class="content">Now we can continue with the rest assured topics</p>
+    <a class="hyperLinks" href="./restAssured-3.html" title="ProjectSetup"
+      >PrevPage</a
+    >
+    <a class="hyperLinks" id="home" href="../index.html">HomePage</a>
+  </body>
+</html>

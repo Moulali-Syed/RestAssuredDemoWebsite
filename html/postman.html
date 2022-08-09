@@ -11,7 +11,15 @@
       href="../images/postman-logo.png"
       style="width: 16px; height: 16px"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/accordion.css" />
   </head>
   <body>
     <h1 id="main">An overview of testing an API in POSTMAN</h1>
@@ -24,43 +32,115 @@
       Click on collections icon and then on <bold>+</bold> symbol and provide a
       name to collection
     </p>
-    <img src="../images/create-collection.png" alt="create-collection" />
 
-    <p class="content">Right Click on the collection , click on Add request</p>
-    <img src="../images/add-request.png" alt="add-request" />
-    <p class="content-sub">
-      Provide a name to the Request , By default request selected will be GET ,
-      select the appropriate
-    </p>
+    <div class="faq-container">
+      <div class="faq active">
+        <h3 class="faq-title">POST Method</h3>
+        <div class="faq-text">
+          <img src="../images/create-collection.png" alt="create-collection" />
 
-    <p class="sub">POST Request</p>
-    <p class="content">
-      Lets see POST method, for POST we need to send the body
-    </p>
-    <p class="content-sub">Provide the URI</p>
-    <img src="../images/post-1.png" alt="post-slide1" />
-    <p class="content-sub">
-      Go to the body tab , select raw , select JSON as content Type and then
-      provide the payload
-    </p>
-    <img src="../images/post-2.png" alt="post-2" />
+          <p class="content">
+            Right Click on the collection , click on Add request
+          </p>
+          <img src="../images/add-request.png" alt="add-request" />
+          <p class="content-sub">
+            Provide a name to the Request , By default request selected will be
+            GET , select the appropriate
+          </p>
 
-    <p class="content-sub">
-      Click on the Send button , we will get response if all the request
-      parameters were valid .status code 200 will be seen
-    </p>
-    <img src="../images/post-3.png" alt="post-3" />
-    <div>
-      <hr />
+          <p class="sub">POST Request</p>
+          <p class="content">
+            Lets see POST method, for POST we need to send the body
+          </p>
+          <p class="content-sub">Provide the URI</p>
+          <img src="../images/post-1.png" alt="post-slide1" />
+          <p class="content-sub">
+            Go to the body tab , select raw , select JSON as content Type and
+            then provide the payload
+          </p>
+          <img src="../images/post-2.png" alt="post-2" />
+
+          <p class="content-sub">
+            Click on the Send button , we will get response if all the request
+            parameters were valid .status code 200 will be seen
+          </p>
+          <img src="../images/post-3.png" alt="post-3" />
+        </div>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="faq">
+        <h3 class="faq-title">GET Method</h3>
+        <div class="faq-text">
+          <p class="content">GET Request</p>
+          <p class="content-sub">
+            Add one more request and select the GET method and provide the BASE
+            URI
+          </p>
+          <p class="content-sub">
+            In GET whatever we have to send must be sent as the query params ,
+            provide the place_id we created using the POST request inside the
+            Query params
+          </p>
+          <p class="content-sub">
+            provide the get URI , pass the required query params and click on
+            Send as shown in below image
+          </p>
+          <img src="../images/get-1.png" alt="get" />
+          <p class="content-sub">
+            We get status code 200 on successful fetching of data
+          </p>
+        </div>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="faq">
+        <h3 class="faq-title">PUT Method</h3>
+        <div class="faq-text">
+          <p class="content">PUT Request</p>
+          <p class="content-sub">
+            Say we want to update the address , then pass payload with place_id
+            and the new address details
+          </p>
+          <p class="content-sub">
+            Create a new request select PUT method and provide the URI and pass
+            the payload
+          </p>
+          <img src="../images/put-1.png" alt="put" />
+          <img src="../images/put-2.png" alt="put" />
+        </div>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="faq">
+        <h3 class="faq-title">DELETE Method</h3>
+        <div class="faq-text">
+          <p class="content">DELETE Request</p>
+          <p class="content-sub">
+            We can delete the place we added by creating a delete request pass
+            the place_id inside the payload
+          </p>
+          <img src="../images/delete-1.png" alt="deleteImg" />
+          <img src="../images/delete-2.png" alt="deleteImg" />
+        </div>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
     </div>
+    <p class="content">Now we can continue with the rest assured topics</p>
+    <a class="hyperLinks" href="./restAssured-1.html" title="ProjectSetup"
+      >NextPage</a
+    >
+    <a class="hyperLinks" id="home" href="../index.html">HomePage</a>
 
-    <p class="content">GET Request</p>
-    <p class="content-sub">
-      Add one more request and select the GET method and provide the BASE URI
-    </p>
-    <p class="content-sub">
-      In GET whatever we have to send must be sent as the query params , provide
-      it place_id we created using the POST request inside the Query params
-    </p>
+    <script src="../js/accordion.js"></script>
   </body>
 </html>

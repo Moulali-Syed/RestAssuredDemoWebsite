@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RestAssured Validations</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../images/rest-assured-logo.png"
+      style="width: 16px; height: 16px"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <h1 id="main">Validating the response</h1>
+    <p class="sub">Lets see the various ways to validate the response</p>
+    <p class="content">Using equalTo method present in hamcrest package</p>
+    <p class="content-sub">
+      We can use the equalTo method to validate any key value pair inside the
+      response body
+    </p>
+    <img src="../images/equalTo.png" alt="equalToMethod" />
+
+    <p class="content">Validating the server from which data is retrieved</p>
+    <p class="content-sub">
+      To validate the server , after assertThat in then provide the key value
+      pair of expected server
+    </p>
+    <img src="../images/serverValidation.png" alt="validate server" />
+    <p class="content">
+      To save a required key value pair and use it in subsequent requets , as we
+      have seen we used the place_id generated inside the POST method , in all
+      subsequent GET , PUT , DELETE requests
+    </p>
+    <p class="content-sub">We can achieve this using a class called JsonPath</p>
+    <p class="content-sub">
+      Before this we convert the response to String and the pass that response
+      as argument to JsonPath class
+    </p>
+    <p class="content-sub">
+      Thus by using various methods present inside the JsonPath class we can
+      extract and save required key value pair from json
+    </p>
+    <img src="../images/jsonPath.png" alt="JsonPath" />
+
+    <p class="content">Now we can continue with the rest assured topics</p>
+    <a class="hyperLinks" href="./restAssured-4.html" title="FewMore Basics"
+      >NextPage</a
+    >
+    <a class="hyperLinks" id="home" href="../index.html">HomePage</a>
+  </body>
+</html>
