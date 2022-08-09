@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+#main {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  margin: 2rem;
+  padding: 0.8rem;
+}
+
+.sub {
+  font-size: 1.2rem;
+  padding: 1rem;
+  padding-left: 2rem;
+  font-weight: 400;
+}
+.bold {
+  font-weight: bold;
+}
+.bold-red {
+  font-weight: bold;
+  color: blue;
+}
+
+.content {
+  padding-left: 3.4rem;
+
+  line-height: 1.7rem;
+}
+.content-sub {
+  padding-left: 6.8rem;
+
+  line-height: 1.7rem;
+}

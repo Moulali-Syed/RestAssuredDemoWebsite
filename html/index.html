@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RestAssured</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../images/rest-assured-logo.png"
+      style="width: 16px; height: 16px"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <h1 id="main">
+      A quick overview of testing Rest APIs using RestAssured Java
+    </h1>
+    <p class="sub">What is an API</p>
+    <p class="content">
+      API stands for Application Programming Interface . Consider an application
+      we have hotels booking , whenever a person visits a new city we want our
+      website to be visible in flights booking website so that the customers can
+      book the hotel rooms from this hotels booking site
+    </p>
+    <p class="content">
+      In order to provide the rooms availability in hotel , we need to
+      communicate with the flights booking website instead of providing complete
+      code base to the flights website we will provide an api that only
+      retrieves information about the availability of rooms in the hotels
+      website
+    </p>
+    <p class="content">
+      Thus we are providing an api to communicate between multiple sites ,
+      similarly we can use apis to communicate between the frontend and backend
+      of application
+    </p>
+    <p class="content">
+      So it becomes very much necessary to be able to provide righteous
+      information , thus we need to test these APIs
+    </p>
+    <p class="sub">
+      REST stands for <span class="bold">Representational State Transfer</span>
+    </p>
+    <p class="sub">HTTP methods</p>
+    <p class="content">HTTP methods are used to communicate with REST APIs</p>
+    <p class="content">
+      The most commonly used http methods are
+      <span class="bold">GET POST PUT DELETE</span>
+    </p>
+    <p class="content">
+      <span class="bold">GET</span> method is used to retrieve information from
+      the server
+    </p>
+    <p class="content">
+      <span class="bold">POST</span> method is used to send data to the server
+    </p>
+    <p class="content">
+      <span class="bold">PUT</span> method is used to update the existing data
+    </p>
+    <p class="content">
+      <span class="bold">DELETE</span> method is used to delete the data
+    </p>
+    <p class="sub">Lets understand the terms in URI</p>
+    <p class="content">
+      <span class="bold"
+        >EndPoint URL: baseURI/resource/(Query/Path)Parameters
+      </span>
+    </p>
+
+    <p class="content">
+      <span class="bold">baseURI</span>
+      the domain of the website like -
+      <span class="bold-red">google.com </span>is considered as baseURI
+    </p>
+    <p class="content">
+      <span class="bold">resource</span> represent API/collection which can be
+      accessed from server
+    </p>
+    <p class="content-sub">
+      google.com<span class="bold-red">/maps </span> here maps is resource
+    </p>
+    <p class="content-sub">
+      google.com<span class="bold-red">/search </span> here search is resource
+    </p>
+    <p class="content-sub">
+      google.com<span class="bold-red">/images </span> here images is resource
+    </p>
+    <p class="content"><span class="bold">Path parameters</span></p>
+    <p class="content-sub">
+      Path parameters are variable parts of a URL path which are used to point a
+      specific resource within a collection
+    </p>
+    <p class="content-sub">
+      google.com/images<span class="bold-red">/1121212 </span> here 1121212 is
+      path parameter pointing a specific resource here image
+    </p>
+    <p class="content"><span class="bold">Query parameters</span></p>
+    <p class="content-sub">
+      Query parameters is used to sort/filter the resources , identified with
+      <bold>?</bold>
+    </p>
+    <p class="content-sub">
+      https://shop.com/orders<span class="bold-red">?sort_by=2/11/2005 </span>
+      here ?sort_by=2/11/2005 is query parameter
+    </p>
+
+    <p class="content"><span class="bold">Headers/Cookies</span></p>
+    <p class="content-sub">
+      Headers represents the meta data associated with API request and response
+      we are sending additional details to API to process our request
+    </p>
+  </body>
+</html>
